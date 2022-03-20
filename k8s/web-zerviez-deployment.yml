@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: web-zerviez
-          image: peaceofsheep/web-zerviez:v0.0.1
+          image: peaceofsheep/web-zerviez:v0.0.2
           ports:
             - containerPort: 3000

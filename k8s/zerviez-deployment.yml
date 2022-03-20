@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: zerviez
-          image: peaceofsheep/zerviez
+          image: peaceofsheep/zerviez:v0.0.2
           ports:
             - containerPort: 8080
