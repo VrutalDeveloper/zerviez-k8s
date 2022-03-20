@@ -8,6 +8,7 @@ on:
 env:
   GKE_CLUSTER: zerviez-cluster
   GKE_ZONE: us-west4-a
+  ZERVIEZ_WEB_TAG: 0.1.0
 
 jobs:
   deploy:
@@ -36,3 +37,4 @@ jobs:
     - name: Deploy
       run: |
         kubectl apply -f k8s
+        kubectl set image deployments/web-zerviez-deployment web-zerviez=peaceofsheep/web-zerviez:$ZERVIEZ_WEB_TAG
